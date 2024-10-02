@@ -1,0 +1,16 @@
+code#4:
+def calculate_costs():
+    loan_payment = float(input("Enter the monthly loan payment: $"))
+    insurance = float(input("Enter the monthly insurance cost: $"))
+    gas = float(input("Enter the monthly gas cost: $"))
+    oil = float(input("Enter the monthly oil cost: $"))
+    tires = float(input("Enter the monthly tires cost: $"))
+    maintanance = float(input("Enter the monthly maintanance cost: $"))
+
+    total_monthly_cost = (loan_payment + insurance + gas + oil + tires + maintanance)
+    total_annual_cost = total_monthly_cost * 12
+
+    print(f"\nTotal Monthly Cost: $ {total_monthly_cost:.2f}")
+    print(f"Total Annual Cost: $ {total_annual_cost:.2f}")
+    
+calculate_costs()
