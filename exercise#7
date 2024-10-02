@@ -1,0 +1,26 @@
+code#7:
+def calculate_paint_job_cost():
+    square_feet_per_gallon = 112
+    labor_hours_per_gallon = 8
+    labor_cost_per_hour = 35.00
+
+    wall_space = float(input("Enter the square feet of wall space to be painted: "))
+    paint_price_per_gallon = float(input("Enter the price of paint per gallon: $"))
+
+    gallons_of_paint_required = wall_space / square_feet_per_gallon
+    
+    hours_of_labor_required = gallons_of_paint_required * labor_hours_per_gallon
+    
+    cost_of_paint = gallons_of_paint_required * paint_price_per_gallon
+
+    labor_charges = hours_of_labor_required * labor_cost_per_hour
+
+    total_cost = cost_of_paint + labor_charges
+
+    print(f"\nThe number of Gallons of paint required: {gallons_of_paint_required:.2f}")
+    print(f"The hours of labor required: {hours_of_labor_required:.2f}")
+    print(f"The cost of the paint: ${cost_of_paint:.2f}")
+    print(f"The labor charges: ${labor_charges:.2f}")
+    print(f"The total cost of the paint job: ${total_cost:.2f}")
+
+calculate_paint_job_cost()
