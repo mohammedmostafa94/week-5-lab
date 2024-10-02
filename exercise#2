@@ -1,0 +1,34 @@
+code#2:
+def amount_purchase():
+    amount = float(input("Enter the amount of a purchase: "))
+    return amount
+def calculate_state_tax(amount):
+    state_tax = 0.04 * amount #state tax is 4%
+    return state_tax
+def claculate_county_tax(amount):
+    county_tax = 0.02 * amount # county tax is 2%
+    return county_tax
+def calculate_total_tax(state_tax, county_tax):
+    total_tax = state_tax + county_tax
+    return total_tax
+def calculate_total_amount(amount, total_tax):
+    total_amount = amount + total_tax
+    return total_amount
+def print_details(amount, state_tax, county_tax, total_tax, total_amount):
+    print("\n----Sales Tax Summary---")
+    print(f"Purchase Amount: $ {amount:.2f}")
+    print(f"State Sale Tax: $ {state_tax:.2f}")
+    print(f"County Sale Tax: $ {county_tax:.2f}")
+    print(f"Total Sale Tax: $ {total_tax:.2f}")
+    print(f"Total Amount (with tax): $ {total_amount:.2f}")
+    
+
+def main():
+    amount = amount_purchase()
+    state_tax = calculate_state_tax(amount)
+    county_tax = claculate_county_tax(amount)
+    total_tax = calculate_total_tax(state_tax, county_tax)
+    total_amount = calculate_total_amount(amount, total_tax)
+    print_details(amount, state_tax, county_tax, total_tax, total_amount)
+main()
+    
