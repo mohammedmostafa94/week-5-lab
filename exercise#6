@@ -1,0 +1,17 @@
+code#6:
+def calculate_ticket_sales():
+    Class_A_price = 20.00
+    Class_B_price = 15.00
+    Class_C_price = 10.00
+
+    class_a_tickets = int(input("Enter the number of Class A tickets sold: "))
+    class_b_tickets = int(input("Enter the number of Class B tickets sold: "))
+    class_c_tickets = int(input("Enter the number of Class C tickets sold: "))
+
+    total_income = (class_a_tickets * Class_A_price) + \
+                   (class_b_tickets * Class_B_price) + \
+                   (class_c_tickets * Class_C_price)
+
+    print(f"\nTotal income generated from ticket sales: $ {total_income:.2f}")
+
+calculate_ticket_sales()
