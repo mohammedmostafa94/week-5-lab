@@ -1,0 +1,8 @@
+code#3:
+def calculate_min_insurance(replacement_cost):
+    return replacement_cost * 0.80 # at least 80%.
+def main():
+    replacement_cost = float(input("Enter the replacement cost of the building: "))
+    minimum_insurance = calculate_min_insurance(replacement_cost)
+    print(f"The minimum amount of insurance he or she should buy for the property is : $ {minimum_insurance:.2f}")
+main()
