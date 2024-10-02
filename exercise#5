@@ -1,0 +1,13 @@
+code#5:
+def calculate_property_tax():
+    assesment_rate = 0.60
+    tax_rate_per_100 = 0.72
+    
+    actual_value = float(input("Enter the acyual value of the property: $"))
+    assesment_value = actual_value * assesment_rate
+    property_tax = (assesment_value / 100) * tax_rate_per_100
+
+    print(f"Assesment Value: $ {assesment_value:.2f}")
+    print(f"Property Tax: $ {property_tax:.2f}")
+
+calculate_property_tax()
