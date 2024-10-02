@@ -1,0 +1,18 @@
+code#8:
+def calculate_sales_tax():
+    state_tax_rate = 0.05 # state tax 5%
+    county_tax_rate = 0.025  # county tax 2.5%
+
+    total_sales = float(input("Enter the total sales for the month: $"))
+
+    state_sales_tax = total_sales * state_tax_rate
+    county_sales_tax = total_sales * county_tax_rate
+
+    total_sales_tax = state_sales_tax +  county_sales_tax
+
+    print(f"\nThe amount of county sales tax: ${county_sales_tax:.2f}")
+    print(f"The amount of state sales tax: ${state_sales_tax:.2f}")
+    print(f"The total sales tax: ${total_sales_tax:.2f}")
+
+calculate_sales_tax()
+
