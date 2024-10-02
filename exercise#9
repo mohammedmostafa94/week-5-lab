@@ -1,0 +1,11 @@
+code#9:
+inches_per_foot = 12
+
+def main():
+    feet = float(input("Enter a number of feet: "))
+
+    print(f"{feet:.2f} feet equals {feet_to_inches(feet):.2f} inches.")
+
+def feet_to_inches(feet):
+    return feet * inches_per_foot
+main()
